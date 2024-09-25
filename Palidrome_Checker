@@ -1,0 +1,14 @@
+#A palindrome is a word, phrase, number, or sequence of characters that reads the same forward and backward, ignoring spaces, punctuation, and capitalization. 
+#In other words, a palindrome remains unchanged when its order of characters is reversed.
+
+# Here is a Python code to check if a given word is Palindrome
+
+user_input = input("Enter a word or phrase: ")
+normalized_input = user_input.lower().replace(" ", "")  # Normalize input
+reversed_input = normalized_input[::-1]  # Reverse the input
+
+# Compare and print result
+if normalized_input == reversed_input:
+    print("It's a palindrome!")
+else:
+    print("It's not a palindrome.")
